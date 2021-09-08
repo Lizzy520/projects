@@ -1,0 +1,11 @@
+<!--pages/cardDetails/cardDetails.wxml-->
+<view class="bg">
+		<view class="image">
+     <view class="border">
+		  	<view class="center"><image lazy-load="true" class="show" src="{{SelectedPath}}"></image></view>
+      </view>
+		</view>
+  <view class="father">
+  	<view class="sentence"><text>{{Selectedword}}</text></view>
+  </view>
+</view>

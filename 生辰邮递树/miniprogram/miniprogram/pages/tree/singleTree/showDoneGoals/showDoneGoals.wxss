@@ -1,0 +1,125 @@
+
+/* pages/postbox2/postbox2.wxss */
+page {
+  height: 100%;
+
+}
+
+.page {
+  height: 100%;
+  /* background-color: rgb(239, 226, 208); */
+  opacity: 0.7;
+  background-color: rgba(143, 134, 134, 0.744);
+}
+
+.title {
+  margin: 50rpx;
+  display: flex;
+  /*设置显示样式**/
+  align-items: center;
+  /**子view垂直居中*/
+  vertical-align: center;
+  /**垂直居中*/
+  justify-content: center;
+  /**内容居中*/
+  flex-direction: row;
+  /* 子view排列方式row--水平 column--垂直 */
+  color:white;
+  /* text-shadow:5px 1px 6px rgb(133, 113, 94); */
+  /* rgb(151, 88, 5); */
+  background-color: rgb(51, 200, 51);
+  padding: 10rpx 0 10rpx;
+  border-radius: 8rpx;
+  margin-top: 0rpx;
+}
+
+.swiper-item {
+  /* background-color: rgb(151, 88, 5); */
+  width: 750rpx;
+  height: 800rpx;
+
+}
+
+.swiperClass {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* margin-left: 130rpx; */
+  border-radius: 10rpx;
+  /* background-color: rgb(244, 220, 188); */
+}
+.swiperClass-img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.swiperClass2{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  opacity: 0.8;
+  background-color: rgb(118, 217, 43);
+}
+.swiperClass3{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+}
+
+
+
+/* .slide-image {
+  width:60%; 
+  height: 60%;
+  border-radius: 3%;
+  position: relative;
+  
+} */
+
+
+.btn button{
+  margin-top: 30rpx;
+  margin-bottom: 10rpx;
+  color: white;
+  background-color:rgb(91,192,222);
+  border:0px;
+}
+
+
+.type-line {
+
+  display: flex;
+
+  flex-flow: row;
+
+  justify-content: space-evenly;
+
+}
+
+.active {
+  transform: none;
+  transition: all 0.2s ease-in 0s;
+}
+
+.quiet {
+  transform: scale(0.8333333);
+  transition: all 0.2s ease-in 0s;
+}
+
+.center {
+/* color: rgba(241, 180, 82, 0.861); */
+  width: 80%;
+  height: 77%;
+  margin-top: 7%;
+  margin-left: 10%;
+  /* background-color: rgb(249, 207, 143); */
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  text-align: justify;
+}

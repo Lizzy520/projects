@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "mp-toptips": "../../../weui/toptips/toptips"
+  },
+  "onReachBottomDistance":100,
+  "navigationBarTitleText": "树屋世界"
+}

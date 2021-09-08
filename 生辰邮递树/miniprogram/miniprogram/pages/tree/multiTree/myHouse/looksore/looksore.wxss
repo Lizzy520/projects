@@ -1,0 +1,140 @@
+/* pages/looksore/looksore.wxss */
+page {
+  
+  
+  height: 100%;
+
+  line-height: 150%;
+}
+.item{
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
+
+.goals{
+  padding-top: 20rpx;
+  width: 88%;
+  margin: 30rpx 6%; 
+  /* border-top: 1px solid rgb(244, 210, 153);
+  border-bottom:1px solid rgb(244, 210, 153); */
+  border:1px solid rgb(244, 210, 153);
+  font-size: 20px;
+}
+.goals1{
+  width: 88%;
+  margin: 30rpx 6%;
+  /* height: 150rpx; */
+  /* position: relative; */
+  /* border-top:1px solid rgb(244, 210, 153);
+  border-bottom:1px solid rgb(244, 210, 153); */
+  border:1px solid rgb(244, 210, 153);
+  padding: 30rpx;
+  font-size: 20px;
+}
+.look{
+   margin-bottom: 20rpx;
+   margin-left: 30rpx;
+   position: relative;
+   top:30rpx;
+   font-size: 15px;
+   margin-right: 40rpx;
+}
+.look1{
+  margin-bottom: 20rpx;
+  margin-top:20rpx;
+  
+  top:20rpx;
+  font-size: 15px;
+  margin-right: 40rpx;
+}
+.head{
+  /*background-color: rgb(168, 194, 243);*/
+  position: relative;
+  height: 30px;
+  width: 100%;
+  border-top: 1px solid rgb(244, 210, 153);
+  border-bottom: 1px solid rgb(244, 210, 153);
+  font-size: 23px;
+  text-align: center;
+  padding: 20rpx;
+  color: #737c88;
+}
+.text0{
+  margin-top:40rpx;
+  margin-bottom: 20rpx;
+  margin-left:30rpx;
+}
+.text00{
+  margin-top:40rpx;
+  margin-bottom: 20rpx;
+  margin-left:50rpx;
+  font-size: 16px;
+}
+.text{
+  right: 20px;
+  border-radius: 5px;
+  padding: 10rpx;
+  font-size: 20px;
+  background-color:rgb(255, 0, 0) ;
+  border:1px solid #dadada; 
+  color: white;
+}
+.text1{
+  right: 20px;
+  border-radius: 5px;
+  padding: 10rpx;
+  margin-left: 80rpx;
+  font-size: 20px;
+  background-color:#07C160 ;
+  
+  border:1px solid #dadada; 
+  color: white;
+}
+.text2{
+  right: 20px;
+  border-radius: 5px;
+  padding: 10rpx;
+  margin-top: 10rpx;
+  margin-left: 50rpx;
+  font-size: 20px;
+  background-color:#07C160 ;
+  border:1px solid #dadada; 
+  color: white;
+}
+
+.mycontain {
+   height: 100%;
+   overflow: scroll; 
+   -webkit-overflow-scrolling: touch;
+}
+
+.check{
+  position: relative;
+  margin-top: 60rpx;
+  margin-bottom: 30rpx;
+  margin-left:30rpx;
+}
+/* 滑动选项卡 */
+.swiper-tab{
+  width: 100%;
+  border-bottom: 2rpx solid #ccc;
+  text-align: center;
+  height: 8%;
+  line-height: 88rpx;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.swiper-tab-item{
+  width: 50%; 
+  color:#434343;
+}
+.active{
+  color:orange;
+  border-bottom: 4rpx solid orange;
+}
+swiper{
+text-align: center;
+height: 92%;
+overflow: scroll;
+-webkit-overflow-scrolling: touch;
+}

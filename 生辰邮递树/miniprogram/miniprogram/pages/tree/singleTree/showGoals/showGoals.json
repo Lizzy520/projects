@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "mp-cell": "../../../../weui/cell/cell",
+    "mp-cells": "../../../../weui/cells/cells",
+    "mp-slideview": "../../../../weui/slideview/slideview",
+    "mp-dialog": "../../../../weui/dialog/dialog",
+    "mp-toptips": "../../../../weui/toptips/toptips" 
+  },
+  "navigationBarTitleText": "待完成目标"
+}

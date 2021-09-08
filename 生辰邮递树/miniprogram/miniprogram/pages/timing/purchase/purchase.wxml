@@ -1,0 +1,25 @@
+<view>
+<!-- <view wx:if="{{!app.userInfo._id}}"> 请至个人信息界面登录</view> -->
+<view >
+
+<view class="top">当前余额：{{Balance}}
+	<block>
+		<image src="../../../images/wodejinbi.png" class="jinbi"> </image>
+	</block>
+</view>
+
+<view class="item">
+	<view wx:for="{{list}}" wx:key="{{index}}">
+		<view>
+			<image class="myhover" src="{{item.src}}" style="height:200px;width:156px;filter:grayscale({{item.gray}})" data-id="{{item.id}}" bindtap="purChase">
+			</image>
+			<view style="text-align: center" class="font">{{item.price}}
+				<image src="../../../images/wodejinbi.png" class="jinbi"> </image>
+			</view>
+		</view>
+	</view>
+</view>
+<mp-toptips msg="{{info}}" type="info" show="{{info}}"></mp-toptips>
+
+</view>
+</view>

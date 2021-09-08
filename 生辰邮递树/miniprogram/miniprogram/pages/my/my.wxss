@@ -1,0 +1,21 @@
+/* pages/my/my.wxss */
+@import "../../app.wxss";
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  width: auto;
+  background-color:#F6F6F6;
+}
+
+.userinfo-avatar {
+  width: 200rpx;
+  height: 200rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+ 
+}
+.h3{
+  font-weight: bolder;
+}

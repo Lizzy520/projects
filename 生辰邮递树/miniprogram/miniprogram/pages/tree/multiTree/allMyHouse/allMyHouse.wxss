@@ -1,0 +1,11 @@
+/* miniprogram/pages/tree/multiTree/allMyHouse/allMyHouse.wxss */
+@import "../../../../app.wxss";
+.myHouses{
+  text-align: center;
+  padding: 20rpx;
+  background-image: url(https://s1.ax1x.com/2020/05/05/YkijPA.jpg);
+  background-position-x: center;
+  background-position-y: center;
+  background-size: 100%;
+}
+

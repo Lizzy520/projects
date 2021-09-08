@@ -1,0 +1,39 @@
+<view class="page">
+	<view class="title">
+		<text style='padding-left: 17px;'>已完成目标</text>
+	</view>
+
+	<view>
+		<view>
+			<swiper class='swiper-item' previous-margin="40px" next-margin="40px" circular bindchange="bindchange">
+				<view wx:for="{{dataList}}" wx:key="item" wx:for-index="index">
+				<!-- height:100%;width:100%;margin:0 40px; -->
+					<swiper-item style="">
+						<view class="type-line">
+							<view class="swiperClass  {{swiperIndex == index ? 'active' : 'quiet'}}">
+							<image src="{{bgSrcList[index%10].bgSrc}}" lazy-load="true" class="swiperClass-img"></image>
+						<view style="background-color: {{bgSrcList[index%10].bgColor}};" class="swiperClass2"></view>
+								<view class="swiperClass3">
+								<mp-cell hover class="center" value="{{item.goal}}"> </mp-cell>
+								<view>{{item.date}}</view>
+								</view>
+							</view>
+						</view>
+					</swiper-item>
+				</view>
+			</swiper>
+		</view>
+	</view>
+	<view class="btn">
+
+		<button bindtap="onReachBottom"  hidden="{{!loadMore}}" plain hover-class>
+		<view wx:if="{{dataList.length==0}}">还没有已完成的小目标哦</view>
+		<view wx:else>查看更多</view>
+		</button>
+		<button  hidden="{{!loadAll}}" plain hover-class>目标已经看完了哦</button>
+	</view>
+
+</view>
+
+
+<!-- </scroll-view> -->

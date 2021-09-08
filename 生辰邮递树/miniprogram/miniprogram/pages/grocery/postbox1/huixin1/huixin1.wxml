@@ -1,0 +1,36 @@
+<!--pages/grocery/postbox1/huixin1/huixin1.wxml-->
+<view class="imatop">
+	<!-- <view class="tabar"> -->
+	<image bindtap="firstbind" src="../../../../images/timeCapsule/nicheng.png" class="icons"></image>
+	<!--发送  -->
+	<image bindtap="submit" disabled="{{disabledSubmitBtn}}" src="../../../../images/timeCapsule/wanchengfa.png" class="zhifeiji"></image>
+	<!-- </view> -->
+	<view class="tabar" style="display:flex;">
+		<text>昵称</text>
+		<text class="fa">发送</text>
+	</view>
+</view>
+
+	<view class="size">
+		<textarea bindinput="contentfun" maxlength="5000" style="display:{{hidetextarea}} ;border:0;border-radius:5px;width: 690rpx;height:700px;padding: 30rpx;resize: none;" placeholder-class="placeholder-input" placeholder="亲爱的陌生人，感谢你的温暖回信，祝愿善良的你好运加满，生活也像糖果一样甜甜哦~" auto-focus />
+	</view>
+	
+	<!-- maxlength="500"设定字符最大数量 -->
+			
+		<view class="bg">
+				<!-- 遮罩层 -->
+				<view class="bgs" style='display:{{display}}'></view>
+				<view class="myContent" style='display:{{display}}'>
+					<view class="contents">
+						<view id="is-anoymous">
+							<view> 
+								<input class='input' bindinput='textInput'  placeholder-style='margin-left:20rpx;' maxlength='500' placeholder='输入昵称' value='{{text}}' ></input>
+							</view>
+						</view>
+					</view>
+					<view class="btbox">
+							<image src="../../../../images/timeCapsule/queren.png" class="btn" bindtap="hideView">确定</image>
+					</view>
+		</view>
+</view>
+	<mp-toptips msg="{{tips}}" type="{{type}}" show="{{tips}}"></mp-toptips>

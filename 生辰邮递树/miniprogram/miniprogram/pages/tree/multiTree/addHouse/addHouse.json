@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "mp-toptips": "../../../../weui/toptips/toptips",
+    "mp-dialog": "../../../../weui/dialog/dialog"
+    
+  },
+  "navigationBarTitleText": "创建树屋"
+}

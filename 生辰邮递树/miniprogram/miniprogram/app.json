@@ -1,0 +1,62 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/my/my",
+    "pages/timing/timing",
+    "pages/timing/purchase/purchase",
+    "pages/cardDetails/cardDetails",
+    "pages/tree/singleTree/singleTree",
+    "pages/tree/singleTree/addGoal/addGoal",
+    "pages/tree/singleTree/showGoals/showGoals",
+    "pages/tree/singleTree/showDoneGoals/showDoneGoals",
+    "pages/grocery/grocery",
+    "pages/grocery/postbox1/postbox1",
+    "pages/grocery/postbox2/postbox2",
+    "pages/grocery/writeAnnoy/writeAnnoy",
+    "pages/grocery/postbox1/huixin1/huixin1",
+    "pages/grocery/shouxin/shouxin",
+    "pages/tree/singleTree/test/test",
+    "pages/tree/singleTree/demo1/demo1",
+    "pages/tree/multiTree/addHouse/addHouse",
+    "pages/tree/multiTree/multiTree",
+    "pages/tree/multiTree/searchHouse/searchHouse",
+    "pages/tree/multiTree/allMyHouse/allMyHouse",
+    "pages/tree/multiTree/myHouse/myHouse",
+    "pages/time_capsule/writing/writing"
+    
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "生辰邮递树",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#64B4BB",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "images/tabbar/zhuye11.png",
+        "selectedIconPath": "images/tabbar/zhuye2.png"
+      },
+      {
+        "pagePath": "pages/timing/timing",
+        "text": "种树",
+        "iconPath": "images/tabbar/shu.png",
+        "selectedIconPath": "images/tabbar/shu2.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "个人信息",
+        "iconPath": "images/tabbar/my0.png",
+        "selectedIconPath": "images/tabbar/my00.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,81 @@
+<!--miniprogram/pages/tree/multiTree/multiTree.wxml-->
+<!-- 我的树屋 -->
+<view wx:if="{{!nickName}}" class="mask-bg" style="display:block;opacity:1;">
+	<view class="mask-myContent content2">
+		<button open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 登录 </button>
+	</view>
+</view>
+
+<view wx:else>
+	<!-- 遮罩层 -->
+
+	<view class="mask-bg" bindtap='hideView' style='display:{{display}}; '></view>
+
+	<view class="mask-myContent myContent2" style='display:{{display}};  '>
+		<!-- 输入口令加入树屋 -->
+		<view>
+			<input bindinput="bindPassword" placeholder="请输入树屋暗号" type="text"></input>
+		</view>
+		<view style="display:flex;">
+			<view bindtap="hideView" class="choose bg1">取消</view>
+			<view bindtap="bindSubmit" class="choose bg2">确定</view>
+		</view>
+
+	</view>
+
+	<!-- 所有树屋列表，先展示最新的 -->
+	<view>
+		<view wx:for="{{dataList}}" wx:key="item" style="" class="treeHouse-item0">
+			<image src="{{bgSrcList[index%12].bgSrc}}" class="img"></image>
+			<view style="background-color: {{bgSrcList[index%12].bgColor}};" class="bg_2"></view>
+			<view id="treeHouse{{index}}" class="treeHouse-item" bindtap="enterHouse" data-index="{{index}}" data-id="{{item._id}}" data-password="{{item.password}}">
+
+				<view class="treeHouse-text">
+					<view class="treeHouse-name"> <text>{{item.name}}</text> </view>
+					<view class="treeHouse-introduction"> <text style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis;">{{item.introduction}}</text> </view>
+					<view class="treeHouse-footer"> <text>由 {{item.memberList[0]}} 创建于 {{item.createdDate}}</text> </view>
+				</view>
+
+			</view>
+
+		</view>
+		<view class="text1" hidden="{{!loadMore}}">正在载入更多...</view>
+		<view class="text1" hidden="{{!loadAll}}">我也是有底线的( •̀ .̫ •́ )✧</view>
+	</view>
+
+	<mp-toptips msg="{{tips}}" type="{{type}}" show="{{tips}}"></mp-toptips>
+	<!-- 加号，跳转到创建树屋界面 -->
+	<!-- <navigator url="./addHouse/addHouse">
+		<image class="add" bindtap="addHouse" src="https://s1.ax1x.com/2020/04/27/JRuzJU.png" mode="widthFix"></image>
+	</navigator> -->
+	  <view id="modal" animation="{{animationModal}}" class="more" style="border-radius:40rpx;opacity: 0;background:#000;padding-bottom: env(safe-area-inset-bottom);"  bindtap="closeAnimate">
+  </view>
+	<!-- 创建树屋 -->
+  <image class="more" style="opacity: 0;" src="https://s1.ax1x.com/2020/05/20/YIvase.png" mode="widthFit" animation="{{animationCreatHouse}}"  bindtap="creatHouse"></image>
+	<!-- 树屋 -->
+  <image  class="more" style="opacity: 0;" src="https://s1.ax1x.com/2020/05/20/Youx7n.png" mode="widthFit" animation="{{animationAllMyHouse}}" bindtap="allMyHouse"></image>
+	<!-- 玩法说明 -->
+  <image  class="more" style="opacity: 0;" src="https://s1.ax1x.com/2020/05/09/YMUlP1.png" animation="{{animationHelp}}" bindtap="help"></image>
+	<!-- 搜索 -->
+  <image  class="more" style="opacity: 0;" src="https://s1.ax1x.com/2020/05/20/Youjmj.png" animation="{{animationSearch}}" bindtap="search"></image>
+	<!-- 加号，控制图标的弹出与关闭 -->
+  <image class="more" src="https://s1.ax1x.com/2020/04/27/JRuzJU.png" bindtap="contorlAnimate"></image>
+	<!--玩法说明弹出框  -->
+	<view class="mask-bg" bindtap='hideView2' style='display:{{display2}};z-index:1003; '></view>
+	<view class="mask-myContent" style='display:{{display2}};z-index:1004;color: rgb(6, 48, 88);background-color:rgb(244, 220, 188) ;line-height:150%;overflow:scroll;border-radius: 20px;  '>
+		<view style="margin: 20px;">
+		<text style="font-weight:bolder;">玩法说明 </text>
+		<view style="text-align:left;">
+		<text >用户可以在这里创建树屋，邀请好友来一起制定目标、共同进步\n
+		每个树屋拥有独一无二的树屋名，在创建树屋后，其他用户可通过搜索树屋名，填写对应的树屋暗号加入树屋\n
+		树屋成员可以在树屋内制定自己的目标，也可以看到树屋内其它成员及自己的目标完成情况，且可以确认自己和其它成员完成情况，从而达到互相监督、共同进步的效果\n
+		同时，树屋成员可以通过查看成就树，了解树屋内最近一段时间完成的目标\n
+		当树屋内用户设定的目标数超过十个之后，还会解锁小树苗的新形态哦 ♪(^∇^*)\n
+		当您在我的目标中点击确认时，目标将会被通过；\n
+		当有50%的树屋成员认为您完成了目标，并点击通过时，目标才算完成\n
+		</text>
+		</view>
+		</view>
+	</view>
+
+</view>
