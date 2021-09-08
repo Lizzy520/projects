@@ -1,0 +1,226 @@
+{
+  "miniprogramRoot": "miniprogram/",
+  "cloudfunctionRoot": "cloudfunctions/",
+  "setting": {
+    "urlCheck": true,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": true,
+    "coverView": true,
+    "nodeModules": true,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": true,
+    "useApiHook": true,
+    "useApiHostProcess": false,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "enableEngineNative": false,
+    "bundle": false,
+    "useIsolateContext": true,
+    "useCompilerModule": false,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "userConfirmedBundleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true
+  },
+  "appid": "wx56ea2f3c07af3a65",
+  "projectname": "Wuliao",
+  "libVersion": "2.8.1",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+  "condition": {
+    "search": {
+      "list": []
+    },
+    "conversation": {
+      "list": []
+    },
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": -1,
+          "name": "db guide",
+          "pathName": "pages/databaseGuide/databaseGuide",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "pages/login/login",
+          "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 2,
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/my/my",
+          "pathName": "pages/my/my",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/submit/submit",
+          "pathName": "pages/submit/submit",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 5,
+          "name": "pages/msg/msg",
+          "pathName": "pages/msg/msg",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/submit/forms/forms",
+          "pathName": "pages/submit/forms/forms",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/submit/construction/construction",
+          "pathName": "pages/submit/construction/construction",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/signup/signup",
+          "pathName": "pages/signup/signup",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/my/about/about",
+          "pathName": "pages/my/about/about",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/index/create/create",
+          "pathName": "pages/index/create/create",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/current/current",
+          "pathName": "pages/current/current",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/warehouse/warehouse",
+          "pathName": "pages/warehouse/warehouse",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/warehouse/group/group",
+          "pathName": "pages/warehouse/group/group",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/warehouse/warehouse",
+          "pathName": "pages/warehouse/warehouse",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/warehouse/update/update",
+          "pathName": "pages/warehouse/update/update",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/warehouse/material/material",
+          "pathName": "pages/warehouse/material/material",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/warehouse/material/basic/basic",
+          "pathName": "pages/warehouse/material/basic/basic",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/warehouse/material/structure/structure",
+          "pathName": "pages/warehouse/material/structure/structure",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/index/searchResult/searchResult",
+          "pathName": "pages/index/searchResult/searchResult",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/index/searchResult/searchResult",
+          "pathName": "pages/index/searchResult/searchResult",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/warehouse/material/decoration/decoration",
+          "pathName": "pages/warehouse/material/decoration/decoration",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/warehouse/material/exclusive/exclusive",
+          "pathName": "pages/warehouse/material/exclusive/exclusive",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,40 @@
+<!--miniprogram/pages/warehouse/verify/examine/examine.wxml-->
+<view class="infor">
+  <view>申请人：{{applicant}}</view>
+  <view>方式：{{warehouse}}</view>
+  <view>时间：{{time}}</view>
+</view>
+<view class="bottom"></view>
+
+<view class="center" style="margin-top:20rpx">
+  <view class="table ">
+    <view class="tr" style="background-color:#e6e6e6">
+      <!-- <view class="th "style="width:50rpx"></view> -->
+      <view class="th ">名称</view>
+      <view class="th ">规格</view>
+      <view class="th ">单位</view>
+      <view class="th ">数量</view>
+    </view>
+    <view wx:for="{{materialList}}" wx:key="item">
+      <view class="tr">
+        <view class="td">
+          {{item.materialName}}
+        </view>
+        <view class="td">
+          {{item.specification}}
+        </view>
+        <view class="td">
+          {{item.unit}}
+        </view>
+        <view class="td">
+          {{item.sum}}
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="btn btn_materialman center">
+  <button class="cu-btn bg-olive margin-tb-sm lg round" style="width:320rpx;" lang="zh_CN" bindtap="bindBack">退回</button>
+  <button class="cu-btn bg-cyan margin-tb-sm lg round" style="width:320rpx;" lang="zh_CN" bindtap="bindAcc">通过</button>
+</view>

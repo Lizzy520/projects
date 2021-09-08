@@ -1,0 +1,90 @@
+/* miniprogram/pages/warehouse/material/material.wxss */
+.first{
+  font-size: 38rpx;
+}
+.mybottom{
+  border-bottom: 0.1px solid #e4e4e4;
+}
+.icon{
+  width: 50rpx;
+  height: 50rpx;
+}
+.position{
+  padding-left: 600rpx;
+  margin-top: -40rpx;
+}
+.btn2{
+  margin-top: 20rpx;
+  margin-bottom: 50rpx;
+}
+.signature{
+  justify-content: right;
+  text-align: right;
+  float: right;
+}
+.signPos{
+  position: fixed;
+  right: 10rpx;
+}
+.cu-form-group {
+	background-color: var(--white);
+	/* padding: 1rpx 10rpx; */
+	display: flex;
+	align-items: center;
+	min-height: 100rpx;
+	justify-content: space-between;
+}
+
+.place{
+  margin-left: -240rpx;
+}
+.imag{
+  width: 50rpx;
+  height: 50rpx;
+}
+.imag2{
+  width: 60rpx;
+  height: 60rpx;
+}
+.pos{
+  margin-top: 15rpx;
+}
+.tip{
+  font-size: 20rpx;
+  color: rgb(142, 142, 142);
+  margin-top: 15rpx;
+}
+.text1{
+  /* font-size: 26rpx; */
+  color: #1cbbb4;
+  /* margin-left: 600rpx; */
+}
+.selbox{
+  margin-top: 20rpx;
+  position: absolute;
+  border-radius: 5%;
+  box-shadow:2rpx 2rpx 2rpx 2rpx #689aa7;
+  top:5rpx;
+  left:20rpx;
+}
+.select{
+  margin-bottom: 10rpx;
+  margin-top: 10rpx;
+  display: flex;
+  margin-left: 5rpx;
+}
+.or{
+  padding: 0 10rpx;
+  color:  #1cbbb4;
+}
+.text2{
+  color:#1cbbb4;
+  position: absolute;
+  left: 100rpx;
+  font-size: 28rpx;
+}
+.save{
+  margin-left: 600rpx;
+}
+
+

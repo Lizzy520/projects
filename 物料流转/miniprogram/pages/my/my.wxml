@@ -1,0 +1,43 @@
+	<!-- 展示用户头像 -->
+	<view class="userinfo center">
+		<view>
+			<view class="img">
+				<open-data type="userAvatarUrl"></open-data>
+			</view>
+			<view class="center nick">
+				<!-- <open-data class="textcenter" type="userNickName" lang="zh_CN"></open-data> -->
+				<view class="textcenter">{{username}}</view>
+			</view>
+			<!-- <view class="center">
+				<view style="color:grey">{{nickName}}</view>
+		</view> -->
+		</view>
+	</view>
+
+	<view class="bottom" style="padding-top:50rpx;margin-bottom:60rpx"></view>
+	<!-- 关于我们 -->
+	<navigator url="../my/about/about">
+		<view class="cu-bar bg-white bottom" style="margin-top:50rpx;">
+			<view class="flex solid-bottom justify-start">
+				<view class=" padding-left-sm margin-left-xs radius">
+					<image src="/images/about.png" class="about"></image>
+				</view>
+				<view class=" padding-left-sm margin-left-xs radius">
+					<view class="action sub-title">
+						<text class="text-xl text-bold text-green">关于我们</text>
+						<text class="bg-green" style="width:2rem"></text>
+						<!-- last-child选择器-->
+					</view>
+				</view>
+			</view>
+		</view>
+	</navigator>
+
+	<!-- <view class="cu-bar bg-white bottom" style="margin-top:50rpx;">
+	<image src="/images/about.png" class="about"></image>
+	<view class="action sub-title">
+		<text class="text-xl text-bold text-green">关于我们</text>
+		<text class="bg-green" style="width:2rem"></text> -->
+	<!-- last-child选择器-->
+	<!-- </view>
+</view> -->

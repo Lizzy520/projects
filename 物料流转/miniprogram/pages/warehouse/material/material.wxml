@@ -1,0 +1,100 @@
+<form>
+	<view class="center first" style="color:#1cbbb4;margin-top:50rpx">材料数量填报</view>
+
+	<view class="selbox" style="margin-top:150rpx">
+		<view class="select">
+			<radio-group bindchange="radiochange">
+				<label wx:for='{{items}}' class="or">
+					<radio color="#1cbbb4" value='{{item.value}}' checked="{{item.checked}}"></radio>
+					{{item.value}}
+				</label>
+			</radio-group>
+			<!-- <image src="../../../../images/save.png" class="imag2" style="margin-left:20rpx" bindtap="bindSave"></image>
+			<view class="text1" style="padding-right:15rpx;padding-left:5rpx" bindtap="bindSave">保存</view> -->
+		</view>
+	</view>
+
+	<view class="center">
+		<view style="margin-top:180rpx;">
+			<view class="cu-form-group myTop" bindtap="basic">
+				<view>
+					<view>基础材料</view>
+					<view wx:if="{{!done}}">
+						<view class="position">
+							<image src="../../../images/enter.png" class="icon"></image>
+						</view>
+					</view>
+					<view wx:else>
+						<view class="position">
+							<image src="../../../images/finish.png" class="icon"></image>
+						</view>
+					</view>
+				</view>
+			</view>
+
+			<view class="cu-form-group" bindtap="structure">
+				<view>
+					<view>结构材料</view>
+					<view wx:if="{{!done}}">
+						<view class="position">
+							<image src="../../../images/enter.png" class="icon"></image>
+						</view>
+					</view>
+					<view wx:else>
+						<view class="position">
+							<image src="../../../images/finish.png" class="icon"></image>
+						</view>
+					</view>
+				</view>
+			</view>
+
+			<view class="cu-form-group" bindtap="decoration">
+				<view>
+					<view>装饰材料</view>
+					<view wx:if="{{!done}}">
+						<view class="position">
+							<image src="../../../images/enter.png" class="icon"></image>
+						</view>
+					</view>
+					<view wx:else>
+						<view class="position">
+							<image src="../../../images/finish.png" class="icon"></image>
+						</view>
+					</view>
+				</view>
+			</view>
+
+			<view class="cu-form-group mybottom" bindtap="exclusive">
+				<view>
+					<view>专用材料</view>
+					<view wx:if="{{!done}}">
+						<view class="position">
+							<image src="../../../images/enter.png" class="icon"></image>
+						</view>
+					</view>
+					<view wx:else>
+						<view class="position">
+							<image src="../../../images/finish.png" class="icon"></image>
+						</view>
+					</view>
+				</view>
+			</view>
+
+			<view>
+				<view class="signature">
+					<view class="cu-form-group">
+						<view class="title">填报人：</view>
+						<input placeholder="{{username}}" class="place"></input>
+					</view>
+					<view class="cu-form-group">
+						<view class="title">时间：</view>
+						<input placeholder="{{standardDate}}" class="place"></input>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</form>
+<view class="center btn2" style="margin-top:80rpx">
+	<button class="cu-btn bg-cyan margin-tb-sm lg round" open-type="getUserInfo" lang="zh_CN" bindtap="bindSubmit">提交</button>
+</view>

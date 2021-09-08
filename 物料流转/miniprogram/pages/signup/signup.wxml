@@ -1,0 +1,23 @@
+<!--miniprogram/pages/signup/signup.wxml-->
+<cu-custom bgColor="bgcolor light">
+  <view slot="content">授权登录</view>
+</cu-custom>
+
+<view wx:if="{{canIUse}}">
+  <view class='header'>
+    <view class="userinfo-avatar">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+  </view>
+  <view class="center">
+    <view class="fontglay">
+      <view>申请获取以下权限</view>
+      <view>获取您的公开信息（昵称，头像等）</view>
+    </view>
+  </view>
+</view>
+
+<view class="btn btn_materialman center">
+  <button class="cu-btn bg-cyan margin-tb-sm lg round" open-type="getUserInfo" 
+  style="width:320rpx;"lang="zh_CN" bindgetuserinfo="addInfo">登录</button>
+</view>

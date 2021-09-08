@@ -1,0 +1,84 @@
+<!--miniprogram/pages/warehouse/warehouse.wxml-->
+<!-- <view class="center fontn"><text>{{proName}}</text></view> -->
+
+<view class="center bottom">
+  <view class="parent">
+    <view class="flex solid-bottom justify-center">
+      <view class=" padding-left-sm margin-xs radius">
+        <!-- <navigator url="inventory/inventory" hover-class="none"> -->
+        <image src="../../images/inventory.png" class="icone" bindtap="bindInventory"></image>
+        <view class="text-center font">库存盘点</view>
+        <!-- </navigator> -->
+      </view>
+      <view class=" padding-left-sm margin-xs radius">
+        <!-- <navigator url="update/update" hover-class="none"> -->
+        <image src="../../images/update.png" class="icone" bindtap="bindUpdate"></image>
+        <view class="text-center font2">材料更新</view>
+        <!-- </navigator> -->
+      </view>
+      <view class=" padding-left-sm margin-xs radius">
+        <!-- <navigator url="group/group" hover-class="none"> -->
+        <image src="../../images/group.png" class="icone" bindtap="bindGroup"></image>
+        <view class="text-center font2">项目详情</view>
+        <!-- </navigator> -->
+      </view>
+
+      <view wx:if="{{isManager===true}}">
+        <view class=" padding-left-sm margin-xs radius">
+          <!-- <navigator url="verify/verify" hover-class="none"> -->
+          <image src="../../images/verify.png" class="icone" bindtap="bindVerify"></image>
+          <view class="num">
+            <view class="msgNum">{{msgNum}}</view>
+          </view>
+          <view class="text-center font2">材料审核</view>
+          <!-- </navigator> -->
+        </view>
+      </view>
+      <view wx:else>
+        <view class=" padding-left-sm margin-xs radius">
+          <!-- <navigator url="verify/verify" hover-class="none"> -->
+          <image src="../../images/tobe.png" class="icone" bindtap="bindmsg"></image>
+          <!-- 有退回 -->
+          <view wx:if="{{isback===true}}">
+            <view class="num">
+              <view class="reddot">.</view>
+            </view>
+          </view>
+          <view class="text-center font2">申请记录</view>
+          <!-- </navigator> -->
+        </view>
+      </view>
+
+    </view>
+  </view>
+</view>
+
+<!-- 跑马灯效果  -->
+<view class="example">
+  <view class="marquee_box">
+    <view class="marquee_text" style="{{orientation}}:{{marqueeDistance}}px;font-size: {{size}}px; color:#98959c;">
+      <view wx:if="{{warn===false&&note==false}}" class="center">
+        <image src="{{adUrl}}" class='ad-image' /><view style="margin-top:10rpx">{{text}}</view>
+      </view>
+      <view wx:else class="center">
+        <image src="{{adUrl}}" class='ad-image' /><view style="margin-top:10rpx">{{text}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- echart创建图表 -->
+<view class="container">
+  <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+</view>
+
+<!-- 库存提示公告栏 -->
+<!-- <view class="swiper-view">
+ <swiper class="swiper_container" vertical="true" autoplay="true" circular="true" interval="2000">
+  <block wx:for="{{msgList}}">
+   <swiper-item>
+    <view class="swiper_item">{{item.title}}</view>
+   </swiper-item>
+  </block>
+ </swiper>
+</view> -->

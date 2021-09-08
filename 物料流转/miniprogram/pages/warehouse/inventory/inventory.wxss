@@ -1,0 +1,2 @@
+/* miniprogram/pages/warehouse/inventory/inventory.wxss */
+@import "../verify/examine/examine.wxss"

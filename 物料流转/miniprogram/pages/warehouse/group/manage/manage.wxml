@@ -1,0 +1,23 @@
+<!--miniprogram/pages/warehouse/group/manage/manage.wxml-->
+<view>
+  <view class="bottom0">
+    <view class="countdown  radius">
+      <view class="action sub-title center">
+        <text class="text-xl text-bold text-green">项目倒计时设置</text>
+      </view>
+    </view>
+  </view>
+  <view class="vertical_center center bottom0" style="margin-top:15rpx;">
+    <view class="inputboader " style="margin-left:50rpx;">
+      <input placeholder="请输入项目结束时间" bindinput='countdownInput'></input>
+    </view>
+  </view>
+</view>
+<view class="bottom0 line"></view>
+<view class="center bottom0">
+  <view class="delete radius" bindtap="delete">
+    <view class="action sub-title">
+      <button class="text-xl text-bold text-red">删除项目</button>
+    </view>
+  </view>
+</view>

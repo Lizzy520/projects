@@ -1,0 +1,169 @@
+/* miniprogram/pages/index/index.wxss */
+
+.msg{
+  margin-top: 30rpx;
+  margin-left: 630rpx;
+  height: 150rpx;
+}
+.imgA{
+  width: 100rpx;
+  height: 100rpx;
+  opacity: 0.9;
+  /* border-radius: 50%; */
+  /* box-shadow: 10rpx 10rpx 10rpx 2rpx rgba(0, 0, 0, 0.4); */
+}
+.cu-avatarnew {
+	font-variant: small-caps;
+	display: inline-flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	/* background-color: #ccc; */
+	color: var(--white);
+	white-space: nowrap;
+	position: relative;
+	width: 64rpx;
+	height: 64rpx;
+	background-size: cover;
+	background-position: center;
+	vertical-align: middle;
+  font-size: 1.5em;
+  border-radius: 65%;
+}
+
+.search{
+  width: 80%;
+}
+.search_arr {
+  border: 1px solid #d0d0d0;
+  border-radius: 5000rpx;
+  margin-left: 20rpx;
+}
+.search_arr input{
+  margin-left: 60rpx;
+  height: 60rpx;
+  border-radius: px;
+}
+.bc_text {
+  line-height: 68rpx;
+  height: 68rpx;
+  margin-top: 34rpx;
+}
+ 
+.sousuo {
+  margin-left: 15rpx;
+  width: 15%;
+  line-height: 150%;
+  text-align: center;
+  border: 1px solid #d0d0d0;
+  border-radius: 10rpx;
+}
+.page_row{
+  display: flex;
+  flex-direction: row
+}
+.searchicon {
+  margin: 10rpx 10rpx 10rpx 10rpx;
+  position: absolute;
+  left:25rpx;
+  z-index: 2;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+.delete{
+  margin: 10rpx 10rpx 10rpx 10rpx;
+  position: absolute;
+  right:150rpx;
+  z-index: 2;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+
+.func{
+  margin-top: 60rpx;
+  margin-bottom: 60rpx;
+}
+.font1{
+  color: #fac321;
+}
+.font2{
+  color: #1cbbb4;
+  /* font-family: fantasy; */
+}
+
+.text1{
+  color: grey;
+  font-size: 30rpx;
+  padding:10rpx 0rpx;
+  text-align: center;
+}
+.item{
+  height:150px;
+  margin: 50rpx 50rpx;
+}
+.item1{
+  position: absolute;
+  z-index: 3;
+  height:150px;
+  width:650rpx;
+}
+.bg{
+  height:150px;
+  width:650rpx;
+  position: absolute;
+  z-index: 2;
+  opacity: 0.7;
+  border-radius: 5%;
+}
+.all_text{
+  margin-top: 35px;
+  color: white;
+  text-align: center;
+  opacity: 1;
+}
+.proname{
+  margin-top: 30rpx;
+  font-weight: bold;
+  font-size: 50rpx;
+  color: white;
+  opacity: 1;
+}
+.introduction{
+  padding:15rpx 0;
+  font-size: 36rpx;
+}
+.choose{
+  text-align: center;
+  color: white;
+  
+  width: 300rpx;
+  margin: 40rpx 40rpx 40rpx 20rpx;
+  
+  padding:20rpx 0;
+  display: inline-block;
+}
+.bg1{
+  background-color:#85D0E7 ;
+}
+.bg2{
+  background-color:rgba(9, 239, 116, 0.799) ;
+}
+.myContent2{
+  position: fixed;
+  top: 30%;
+  
+  padding: 140rpx 10rpx 0 10rpx;
+  height: 24%;
+}
+.myContent2 input{
+  border-bottom: 1px solid rgb(106, 245, 130);
+  margin: 20rpx 20rpx;
+}
+.none{
+  height: 50%;
+  width: 50%;
+  margin-top: 40%;
+}
+

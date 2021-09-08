@@ -1,0 +1,28 @@
+<!--miniprogram/pages/warehouse/group/group.wxml-->
+<view class="bottom0 center text-xl text-bold text-green" style="margin-top:30rpx;font-size:30rpx;">基本信息</view>
+<view class="bottom0" style="margin-top:20rpx;">
+  <view style="color:gray;margin-left:50rpx">
+    <view>项目名称：<text>{{proName}}</text></view>
+    <view>项目经理：<text>{{creator}}</text></view>
+    <view>项目成员：<text wx:for="{{memberList}}">{{item}}\t</text></view>
+    <view>项目简介：<text>{{introduction}}</text></view>
+  </view>
+</view>
+<view wx:if="{{isManager===true}}">
+  <view bindtap="bindmanage">
+    <view class="cu-bar bg-white bottom" style="margin-top:50rpx;">
+      <view class="flex solid-bottom justify-start">
+        <view class=" padding-left-sm margin-left-xs radius">
+          <image src="/images/manage.png" class="about"></image>
+        </view>
+        <view class=" padding-left-sm margin-left-xs radius">
+          <view class="action sub-title">
+            <text class="text-xl text-bold text-green">项目管理</text>
+            <text class="bg-green" style="width:2rem"></text>
+            <!-- last-child选择器-->
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

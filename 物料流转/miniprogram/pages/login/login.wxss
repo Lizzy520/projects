@@ -1,0 +1,58 @@
+.header {
+  position: relative;
+  margin: 90rpx 0rpx 90rpx 50rpx;
+  width: 650rpx;
+  height: 320rpx;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;     /*居中对齐弹性盒子当中的各项元素*/
+  border-bottom: 1px solid #ccc;
+}
+.userinfo-avatar {
+  overflow:hidden;
+  display: block;
+  width: 160rpx;
+  height: 160rpx;
+  margin: 20rpx;
+  margin-top: 50rpx;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+.content {
+    margin-left: 50rpx;
+    margin-bottom: 90rpx;
+}
+/* .content text {
+    display: block;
+    color: #9d9d9d;
+    margin-top: 40rpx;
+} */
+.bottom {
+    border-radius: 80rpx;
+    margin: 70rpx 50rpx;
+    font-size: 35rpx;
+    background-color: #436f91;
+    color: rgb(255, 255, 255);
+}
+/* primary太强惹，这些都用不了 */
+.shadow[class*='white'] {
+ box-shadow: rgb(170, 186, 206);
+ box-shadow: 0 0 10rpx rgba(0, 0, 0, 0.1);
+
+}
+
+.btn_manager{
+  padding-right: 2rpx;
+  margin-right: 20rpx;
+}
+
+.btn_materialman{
+  padding-left: 2rpx;
+  padding-right: 2rpx;
+}
+
+
+
+

@@ -1,0 +1,65 @@
+{
+  "pages": [
+    "pages/signup/signup",
+    "pages/login/login",
+    "pages/index/index",
+    "pages/my/my",
+    "pages/my/about/about",
+    "pages/index/searchResult/searchResult",
+    "pages/index/create/create",
+    "pages/current/current",
+    "pages/warehouse/warehouse",
+    "pages/warehouse/group/group",
+    "pages/warehouse/inventory/inventory",
+    "pages/warehouse/material/material",
+    "pages/warehouse/material/basic/basic",
+    "pages/warehouse/material/decoration/decoration",
+    "pages/warehouse/material/exclusive/exclusive",
+    "pages/warehouse/material/structure/structure",
+    "pages/warehouse/verify/verify",
+    "pages/warehouse/verify/examine/examine",
+    "pages/warehouse/group/manage/manage",
+    "pages/warehouse/tobe/tobe",
+    "pages/warehouse/tobe/edit/edit",
+    "pages/index/myPro/myPro"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#7ca0bb",
+    "navigationBarTitleText": "物料流转",
+    "navigationBarTextStyle": "white"
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom",
+    "mp-dialog": "/weui/dialog/dialog",
+    "mp-toptips": "/weui/toptips/toptips"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#64B4BB",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "项目管理",
+        "iconPath": "images/chuansong1.png",
+        "selectedIconPath": "images/chuansong2.png"
+      },
+      {
+        "pagePath": "pages/current/current",
+        "text": "仓库管理",
+        "iconPath": "images/cangku1.png",
+        "selectedIconPath": "images/cangku2.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "个人信息",
+        "iconPath": "images/my1.png",
+        "selectedIconPath": "images/my22.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

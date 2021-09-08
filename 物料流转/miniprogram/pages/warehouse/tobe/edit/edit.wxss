@@ -1,0 +1,3 @@
+/* miniprogram/pages/warehouse/tobe/edit/edit.wxss */
+@import "../../material/basic/basic.wxss";
+@import "../../material//material.wxss"

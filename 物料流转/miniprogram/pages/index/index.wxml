@@ -1,0 +1,83 @@
+<!--miniprogram/pages/index/index.wxml-->
+
+<import src="../../utils/wxSearch/wxSearch.wxml" />
+
+<view>
+	<!-- 遮罩层 -->
+	<view class="mask-bg" bindtap='hideView' style='display:{{display}}; '></view>
+	<view class="mask-myContent myContent2" style='display:{{display}}; height:400rpx '>
+		<!-- 输入项目编号 -->
+		<view>
+			<input bindinput="bindPassword" placeholder="请输入项目编号" type="text" password="true"></input>
+		</view>
+		<view style="display:flex;">
+			<view bindtap="hideView" class="choose bg1">取消</view>
+			<view bindtap="bindSubmit" class="choose bg2">确定</view>
+		</view>
+	</view>
+
+	<view class='page_row' style="margin-top:30rpx">
+		<view class="search">
+			<view class="df search_arr">
+				<icon class="searchicon" size='20' type='search'></icon>
+				<!-- <icon class="delete" size='20' type="cancel" color="#888686" bindtap="hideSeach"></icon> -->
+				<input placeholder="搜索" bindtap="startSearch" search="{{search}}" />
+			</view>
+		</view>
+		<view class='center' bindtap="handleSearch">
+			<view class="cu-btn bg-cyan shadow-blur round" bindtap="wxSearchFn" plain="true">搜索</view>
+		</view>
+	</view>
+	<template is="wxSearch" data="{{wxSearchData}}" />
+
+	<!-- 功能模块 -->
+	<view class="center bottom func">
+		<view class="parent">
+			<view class="flex solid-bottom justify-center">
+				<view class=" padding-left-sm margin-xs radius">
+					<!-- 添加表单 -->
+					<navigator url="create/create" hover-class="none">
+						<image src="/images/create.png" class="imgA"></image>
+						<view class="text-center font2">新建项目</view>
+					</navigator>
+				</view>
+				<view class=" padding-left-sm margin-xs radius">
+					<navigator url="myPro/myPro" hover-class="none">
+						<image src="/images/myPro.png" class="imgA"></image>
+						<view class="text-center font2">我的项目</view>
+					</navigator>
+				</view>
+			</view>
+		</view>
+	</view>
+
+	<view>
+		<view wx:for="{{dataList}}" wx:key="item" class="item">
+			<view style="background-color:{{bgSrcList[index%12].bgColor}};" class="bg"></view>
+			<view id="projects{{index}}" class="item1" bindtap="enterPro" data-index="{{index}}" data-id="{{item._id}}"
+				data-password="{{item.proID}}">
+				<view class="all_text">
+					<view class="proname"><text>{{item.proName}}</text></view>
+					<view class="introduction"><text
+							style="overflow:hide;white-space:nowrap;text-overflow:ellopsis;">{{item.introduction}}</text></view>
+					<view class="profooter"><text>由{{item.memberList[0]}}创建于{{item.createdDate}}</text></view>
+				</view>
+			</view>
+		</view>
+		<view class="text1" hidden="{{!loadMore}}">正在加载...</view>
+		<view class="text1" hidden="{{!loadAll}}">没有更多了哦~</view>
+	</view>
+	<mp-toptips msg="{{tips}}" type="{{type}}" show="{{tips}}"></mp-toptips>
+</view>
+
+
+
+
+<!-- 消息 -->
+<!-- <view class="msg cu-avatarnew xl radius">
+  <navigator url="../msg/msg" hover-class="none">
+    <image class="imgA" src="/images/xiaoxi2.png"></image>
+  </navigator>
+  <view class="cu-tag badge">0</view>
+</view> -->
+<!-- <view class="bg-green light text-center" style="padding:50rpx;margin-top:100rpx"> -->

@@ -1,0 +1,18 @@
+/* miniprogram/pages/warehouse/group/manage/manage.wxss */
+.countdown{
+  margin-top:50rpx;
+}
+
+.inputboader{
+  /* border: 10rpx solid #99d4cb; */
+  border-radius: 10rpx;
+  height: 70rpx;
+}
+
+.delete{
+  margin-top: 10rpx;
+}
+
+.line{
+  margin-top: 330px;
+}

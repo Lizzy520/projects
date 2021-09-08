@@ -1,0 +1,29 @@
+<!--miniprogram/pages/index/create/create.wxml-->
+<view wx:if="{{canIUse}}">
+  <view style="margin-top:70rpx;margin-bottom:30rpx">
+    <view style="margin-left:30rpx;margin-right: 30rpx;">
+      <view style="margin-bottom:20rpx;">项目名称</view>
+      <view class="proName vertical_center">
+        <input placeholder="请输入工地项目名称" style="margin-left:5rpx" bindinput='proNameInput'></input>
+      </view>
+      <view style="margin-bottom:20rpx; margin-top:50rpx">项目经理</view>
+      <view class="proName vertical_center">
+        <input placeholder="请输入项目经理的姓名" style="margin-left:5rpx" bindinput='creatorInput'></input>
+      </view>
+      <view style="margin-bottom:20rpx; margin-top:50rpx">项目编号</view>
+      <view class="proName vertical_center">
+        <input placeholder="请输入项目编号作为仓库密码" style="margin-left:5rpx" bindinput='idInput'  password="true"></input>
+      </view>
+      <view style="margin-bottom:20rpx; margin-top:50rpx">项目简介</view>
+      <view class="intro vertical_center">
+        <textarea bindinput="introInput" placeholder="请简要说明该建筑工程项目" style="margin-top:20rpx;margin-left:5rpx;width:680rpx" maxlength="1000" auto-focus></textarea>
+      </view>
+
+    </view>
+  </view>
+  <view class="btn btn_materialman center">
+    <button class="cu-btn bg-cyan margin-tb-sm lg round" style="width:320rpx;"lang="zh_CN" bindtap="bindSubmit">完成</button>
+  </view>
+</view>
+<!-- 提示 -->
+<mp-toptips msg="{{tips}}" type="{{type}}" show="{{tips}}"></mp-toptips>

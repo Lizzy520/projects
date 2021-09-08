@@ -1,0 +1,59 @@
+<view class="center">
+	<view class="tip">提示：点击“ + ”添加新的记录，表格内容可修改，填写完成注意保存</view>
+</view>
+
+
+
+<view class="center" style="margin-top:50rpx">
+	<view class="table ">
+		<view class="tr" style="background-color:#e6e6e6">
+			<!-- <view class="th "style="width:50rpx"></view> -->
+			<view class="th ">名称</view>
+			<view class="th ">规格</view>
+			<view class="th ">单位</view>
+			<view class="th ">数量</view>
+		</view>
+		<!-- <view class="tr">
+      <view class="td"><input placeholder="点击输入"  /></view>
+      <view class="td"><input placeholder="点击输入"  /></view>
+      <view class="td"><input placeholder="点击输入"  /></view>
+    </view> -->
+		<view wx:for="{{rowList}}" wx:key="item">
+			<view class="tr" bind:touchstart catch:touchmove bind:touchend="bindindex" data-index="{{index}}" bindlongpress='longPress' style="z-index:1;">
+				<view class="td">
+					<input placeholder-style="color:gary" placeholder="点击输入" bindinput="inputName"
+						value='{{item.materialName}}' />
+						<view wx:if="{{deleteicon===true}}" class="center" bindtap="binddelete">
+						<view class="deleteicon" style="background-color:#cdcdcd">
+							<image src="../../../../images/delete.png" class="imag"></image>
+						</view>
+					</view>
+				</view>
+				<view class="td"><input placeholder-style="color:gary" placeholder="点击输入" bindinput="inputSpecification"
+						value="{{item.specification}}" /></view>
+				<view class="td"><input placeholder-style="color:gary" placeholder="点击输入" bindinput="inputUnit"
+						value="{{item.unit}}" /></view>
+				<view class="td">
+					<input placeholder-style="color:gary" placeholder="点击输入" bindinput="inputSum" value="{{item.sum}}" />
+				</view>
+			</view>
+			<!-- <view>{{index}}</view> -->
+		</view>
+	</view>
+</view>
+
+<picker bindchange="bindCasPickerChange" range="{{casArray}}" mode='selector'>
+	<view>
+		<view>
+			<view class="weui_footer" style="margin-top:10rpx;margin-left:650rpx">
+				<view>
+					<image src="../../../../images/add.png" class="imag2"></image>
+				</view>
+			</view>
+		</view>
+	</view>
+</picker>
+<view class="btn btn_materialman center">
+	<button class="cu-btn bg-cyan margin-tb-sm lg round" style="width:320rpx;" lang="zh_CN" bindtap="bindSave">保存</button>
+</view>
+<!-- <view>{{index}}</view> -->

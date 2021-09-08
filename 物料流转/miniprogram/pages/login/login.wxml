@@ -1,0 +1,43 @@
+<cu-custom bgColor="bgcolor light">
+  <view slot="content">授权登录</view>
+</cu-custom>
+
+<view wx:if="{{canIUse}}">
+  <view class='header'>
+    <view class="userinfo-avatar">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+  </view>
+  <!-- <view class="center">
+    <view class="fontglay">
+      <view>申请获取以下权限</view>
+      <view>获取您的公开信息（昵称，头像等）</view>
+    </view>
+  </view> -->
+
+  <form>
+    <view class="cu-form-group margin-top">
+      <view class="title">姓名</view>
+      <input placeholder="请输入您的姓名" bindinput='NameInput' onKeypress="javascript:if(event.keyCode == 32)event.returnValue = false;"></input>
+    </view>
+    <view class="cu-form-group">
+      <view class="title">电话</view>
+      <input placeholder="请输入您的电话号码" bindinput='phoneNumInput'  onKeypress="javascript:if(event.keyCode == 32)event.returnValue = false;"></input>
+    </view>
+  </form>
+
+  <!-- 人员注册按钮 -->
+  <view class="center">
+    <!-- <view class="btn btn_manager">
+       <button class="cu-btn bg-cyan margin-tb-sm lg round" open-type="getUserInfo" 
+       style="width:320rpx;"lang="zh_CN" bindgetuserinfo="bindGetUserInfo1">我是项目经理</button>
+    </view>
+    </view> -->
+    <view class="btn btn_materialman">
+      <button class="cu-btn bg-cyan margin-tb-sm lg round" open-type="getUserInfo" 
+      style="width:320rpx;"lang="zh_CN" bindgetuserinfo="bindGetUserInfo">注册</button>
+    </view>
+  </view>
+</view>
+<!-- 提示 -->
+<mp-toptips msg="{{tips}}" type="{{type}}" show="{{tips}}"></mp-toptips>

@@ -1,0 +1,15 @@
+<view class='margin-xl bg-white padding-xl radius shadow-lg'>
+  <view class='text-center margin-bottom text-lg  text-grey'>关于物料流转小程序</view>
+  <view class='text-content'>
+    <view>哈喽，大家好！欢迎使用物料流转小程序！</view>
+    <view class='margin-top-sm'>该项目是我个人开发的用于参加学生创新创业实践活动的小程序，不涉及商业活动。</view>
+    <view class='margin-top-sm'>
+      本项目的实现是为了工作人员能在手机端更方便、快捷地进行建筑材料的管理，可以动态地获取物料信息，更快速地进行物料的出入库申请。
+    </view>
+    <view class='margin-top-sm'>由于时间有限，还有部分功能未完善。配色方案参考了GitHub上的开源项目ColorUI组件库。关于引入ECharts，这里未实现功能，只是以其中的index作为例子。图标大部分来自阿里巴巴矢量图标库。如果有问题需要咨询，这里留下作者wx：xiaoliqi183。</view>
+    <view class='margin-top-sm'>我没有拿到建筑材料的单子，上网查了几个作为例子。测试项目进入密码都是123，方便一点~</view>
+    <view class='margin-top-sm'>为什么这里长得和ColorUI的说明页一样，因为我要去赶实验和课题了#^#有机会再改吧。</view>
+    <view class='margin-top-sm'>最后，祝大家学业有成，事业有成，生意兴隆，身体健康，快乐万岁！快点找到工作！</view>
+  </view>
+</view>
+

@@ -1,0 +1,50 @@
+<!--miniprogram/pages/index/index.wxml-->
+
+<import src="../../utils/wxSearch/wxSearch.wxml" />
+
+<view>
+
+	<!-- 遮罩层 -->
+	<view class="mask-bg" bindtap='hideView' style='display:{{display}}; '></view>
+	<view class="mask-myContent myContent2" style='display:{{display}}; height:400rpx '>
+		<!-- 输入项目编号 -->
+		<view>
+			<input bindinput="bindPassword" placeholder="请输入项目编号" type="text" password="true"></input>
+		</view>
+		<view style="display:flex;">
+			<view bindtap="hideView" class="choose bg1">取消</view>
+			<view bindtap="bindSubmit" class="choose bg2">确定</view>
+		</view>
+	</view>
+
+	<view class='page_row' style="margin-top:30rpx">
+		<view class="search">
+			<view class="df search_arr">
+				<icon class="searchicon" size='20' type='search'></icon>
+				<!-- <icon class="delete" size='20' type="cancel" color="#888686"></icon> -->
+				<input placeholder="输入项目名称" bindblur="startSearch" search="{{search}}" />
+			</view>
+		</view>
+		<view class='center' bindtap="handleSearch">
+			<view class="cu-btn bg-cyan shadow-blur round" bindtap="wxSearchFn" plain="true">搜索</view>
+		</view>
+	</view>
+	<view wx:if="{{name.length>0}}">
+		<view wx:if="{{msg}}" style="text-align:center;padding-top:30px;color:rgb(142, 142, 142);">无结果</view>
+		<view>
+			<view wx:for="{{dataList}}" wx:key="item" class="item">
+				<view style="background-color:{{bgSrcList[index%12].bgColor}};" class="bg"></view>
+				<view id="projects{{index}}" class="item1" bindtap="enterPro" data-index="{{index}}" data-id="{{item._id}}" data-password="{{item.proID}}">
+					<view class="all_text">
+						<view class="proname"><text>{{item.proName}}</text></view>
+						<view class="introduction"><text style="overflow:hide;white-space:nowrap;text-overflow:ellopsis;">{{item.introduction}}</text></view>
+						<view class="profooter"><text>由{{item.memberList[0]}}创建于{{item.createdDate}}</text></view>
+					</view>
+				</view>
+			</view>
+		</view>
+
+	</view>
+	<template is="wxSearch" data="{{wxSearchData}}" />
+	<mp-toptips msg="{{tips}}" type="{{type}}" show="{{tips}}"></mp-toptips>
+</view>

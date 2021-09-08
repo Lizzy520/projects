@@ -1,0 +1,15 @@
+/* miniprogram/pages/my/about/about.wxss */
+page{
+  background-color: rgba(221, 221, 221, 0.89);
+}
+.about{
+  background-color: white;
+  height: 70%;
+  width: 80%;
+  margin-top:100rpx;
+  border-radius: 10rpx;
+}
+.title{
+  color: rgb(169, 184, 184);
+  font-size: medium;
+}

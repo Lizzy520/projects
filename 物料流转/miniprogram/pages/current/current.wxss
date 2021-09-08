@@ -1,0 +1,7 @@
+/* miniprogram/pages/current/current.wxss */
+@import "../warehouse/warehouse.wxss";
+.none{
+  height: 50%;
+  width: 50%;
+  margin-top: 40%;
+}

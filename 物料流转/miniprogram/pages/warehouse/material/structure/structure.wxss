@@ -1,0 +1,58 @@
+/* miniprogram/pages/warehouse/material/basic/basic.wxss */
+@import "../material.wxss";
+.imag{
+  width: 50rpx;
+  height: 50rpx;
+}
+.imag2{
+  width: 60rpx;
+  height: 60rpx;
+}
+.pos{
+  margin-top: 15rpx;
+}
+.tip{
+  font-size: 20rpx;
+  color: rgb(142, 142, 142);
+  margin-top: 15rpx;
+}
+.text1{
+  /* font-size: 26rpx; */
+  color: #9c7951;
+  /* margin-left: 600rpx; */
+}
+.selbox{
+  margin-top: 20rpx;
+  position: absolute;
+  border-radius: 5%;
+  box-shadow:2rpx 2rpx 2rpx 2rpx #9c7951;
+  top:5rpx;
+  left:20rpx;
+}
+.select{
+  margin-bottom: 10rpx;
+  margin-top: 10rpx;
+  display: flex;
+  margin-left: 5rpx;
+}
+.or{
+  padding: 0 10rpx;
+  color:  #9c7951;
+}
+.text2{
+  color: rgb(184, 168, 153);
+  position: absolute;
+  left: 100rpx;
+  font-size: 28rpx;
+}
+.save{
+  margin-left: 600rpx;
+}
+.deleteicon{
+  border-radius: 50%;
+  width:50rpx;
+  height:50rpx;
+  margin-left:-130rpx;
+  /* margin-bottom: -46rpx; */
+}
+
